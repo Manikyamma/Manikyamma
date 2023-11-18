@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(226, 242, 250);
+}
+
+.row{
+    
+   display: flex;
+    height: 200px;
+    align-content: center;
+    justify-content: center;
+    
+    
+}
+.row1{
+    
+    
+    height: 400px;
+}
+.row2{
+    
+    height: 250px;
+    display:flexbox;
+    overflow: hidden;
+}
+.col1{
+   
+    height: 100%;
+    width: 25%;
+    display: flex;
+    
+    margin: 0px;
+    justify-content: center;
+
+    
+}
+marquee{
+    font-size:25px;
+}
+    
+    
+
+.col3{
+    margin-top: 0%;
+    padding-top: 0%;
+   
+    
+    height: 100%;
+    width: 60%;
+    align-self: center;
+    justify-content: center;
+    
+    
+}
+.col11{
+    
+    height: 100%;
+    width: 25%;
+    margin: 0%;
+    float: left;;
+    
+}
+.col12{
+    
+    height: 95%;
+    width: 49%;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.col13{
+    
+    height:98%;
+    width: 25%;
+    float: right;
+     border: #023e8a solid 5px; 
+    border-left: #023e8a solid 20px; 
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    border-radius: 8px;
+    
+}
+.dep{
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    height: 20%;
+    margin-top: 0%;
+    font-size: medium;
+    font: bold;
+    border-radius: 25%;
+    background-color: rgb(191, 225, 248);
+    border-color: white;  
+}
+
+.adr{
+    float: left;
+    background-color: rgb(191, 225, 248);
+    border-radius: 20px;
+    background-image: url(map.jpeg);
+    width: 20%;
+    text-align: center;
+    color: rgb(45, 21, 224);
+}
+.adr:hover{
+    transform: scale(1.5);
+    color: black;
+    font-style: oblique;
+}
+.loc{
+    /* border: #023e8*/
+    float: right;
+    background-image: url(map2.jpeg);
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+.dep:hover{
+    background-color: #023e8a;
+    color: white;
+    transform: scale(0.85);
+    border-radius: 8px;
+}
+.blue{
+    margin-top: 5px;
+    
+    background-color: #023e8a;
+    height: 25px;
+    width: 100%;
+    
+}
+a{
+    color: #023e8a;
+    
+    text-align: center;
+}
+a:hover{
+    transform: scale(2.5);
+    
+    
+    
+}
+marquee{
+    margin-left: 300px;
+    margin-right: 300px;
+}
