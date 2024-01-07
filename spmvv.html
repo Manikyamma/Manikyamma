@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spmvv.org</title>
+    <link rel="stylesheet" href="spmvv.css"> 
+
+    
+
+</head>
+<script>
+    
+
+function myFunction() {
+    var form = document.getElementById('f');
+  if (form.checkValidity()) {
+    alert("Adding Succesful!");
+  }
+  
+}
+</script>
+
+
+
+
+<body>
+    <div class="row">
+        <div class="col1">
+
+        <img src="logo-left.png" height="90%" ></div>
+
+        <div class="col3">
+            <h2> SRI PADMAVATI MAHILA VISVAVIDYALAYAM</h2>
+            <h2>(Women's University)</h2>
+            <h3>Tirupati, Andhra Pradesh-517502, India</h3>
+        </div>
+
+    </div>
+    <div class="blue">
+        <marquee  direction="target" style="color: aliceblue;">Accredited with "A+" Grade by NAAC &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; ISO 9001 : 2015 Certified</marquee>
+    </div>
+
+    <div class="row1">
+        <div class="col11">
+            <h3
+                style="border: 1px;background-color: rgb(212, 232, 238); text-align: center; padding-bottom: 0px;margin-bottom: 0%;height: 15%; width: 100%;border-radius: 25%;">
+                DEPARTMENTS</h3>
+            <input type="button" value="computer science and engineering" class="dep"
+                onclick="window.open('cse.html','_blank')">
+            <input type="button" value="electrical and communication engineering" class="dep"
+                onclick="window.open('ece.html','_blank')">
+            <input type="button" value="electrical and electronics engineering" class="dep"
+                onclick="location.href='cse.html'">
+            <input type="button" value="mechanical engineering" class="dep" onclick="location.href='cse.html'">
+
+        </div>
+        <div class="col12">
+            <img src="banner_arch.jpg" height=100%; width=98% style="text-align: center;">
+        </div>
+        <div class="col13">
+            <form  id="f" style="text-align: center;">
+                <h3> login</h3><br>
+                <label for="username">username</label><br>
+                <input type="email" name="username" id=" username" style="width: 70%; margin-bottom: 20px;" placeholder="enter email id" required><br>
+                <label for="password" >password</label><br>
+                <input type="password" name="password" id="password" placeholder="enter password" required  ><br>
+                <button style="margin-top: 50px;" onclick="myFunction()">submit</button>
+            </form>
+        </div>
+
+    </div>
+    <div class="row2">
+        <div class="adr">
+            <br>
+            <h2 style="margin-top: 50px;text-align: center;">
+                Address</h2>
+            <p>Padmavati Nagar, <br> Tirupati ,<br> Andhra Pradesh , <br>517502 , <br>India</p>
+        </div>
+        <div class="loc" style="margin-top: 50px;">
+            <h1>Google maps location</h1> <br>
+            <a href="https://goo.gl/maps/KQXL86bxHtCw47mr5" target="_blank">click here </a>
+        </div>
+    </div>
+
+</body>
+
+</html>
