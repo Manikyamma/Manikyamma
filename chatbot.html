@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SciAstra Chatbot</title>
+</head>
+<body>
+    <div id="sciastra-chatbot" style="position: fixed; bottom: 10%; right: 10%; width: 85%;height: 80%; background-color:black; border: 10px solid #ccc; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <div style="background-color:whitesmoke; color:black; height: 20px; padding: 10px; text-align:center; font-weight: bold;">
+            SCIASTRA CHAT
+        </div>
+        <div id="chatbot-messages" style="max-height: 90%; overflow-y: auto; padding: 10px;"></div>
+        <div style="padding: 10px;">
+            <input type="text" id="user-input" placeholder="Type your question" style="width: 80%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+            <button onclick="askQuestion()" style="width: 18%; padding: 8px; background-color: darkgoldenrod; color: #fff; border: 1;; border-radius: 4px; cursor: pointer;">Ask</button>
+        </div>
+    </div>
+    <script>
+        function askQuestion() {
+            var userQuestion = document.getElementById('user-input').value;
+            if (userQuestion.trim() === '') return;
+            var botResponse = getBotResponse(userQuestion);
+            updateChat(userQuestion, 'user');
+            updateChat(botResponse, 'bot');
+            document.getElementById('user-input').value = '';
+        }
+
+        function updateChat(message, sender) {
+            var chatbox = document.getElementById('chatbot-messages');
+            var messageElement = document.createElement('div');
+            messageElement.style.marginBottom = '10px';
+
+            if (sender === 'user') {
+                messageElement.innerHTML = `<strong>You:</strong> ${message}`;
+            } else {
+                messageElement.innerHTML = `<strong>SciAstra:</strong> ${message}`;
+            }
+
+            chatbox.appendChild(messageElement);
+            chatbox.scrollTop = chatbox.scrollHeight;
+        }
+
+        function getBotResponse(question) {
+            var responses = [
+                "SciAstra is a platform for scientific exploration and learning.",
+                "We offer a variety of courses in astronomy, physics, and related fields.",
+                "You can enroll in our courses and start your journey into the wonders of science!",
+                "Our team of experienced educators is passionate about making science accessible to everyone.",
+                "At SciAstra, we guide students who want to become scientists and pursue research by helping them secure admissions in the top colleges for the same like IISER, NISER, CEBS, ICAR, CMI, etc.",
+                "SCIASTRA has your back with over 20 free practice tests for exams like the IISER Aptitude Test, NEST , KVPY, ISI, CMI, ICAR and more. These tests are made to help you without costing anything"
+            
+            ];
+            var randomDelay = Math.floor(Math.random() * 1000) + 500;
+            var response = responses[Math.floor(Math.random() * responses.length)];
+
+            setTimeout(function () {
+                updateChat(response, 'bot');
+            }, randomDelay);
+
+            return "I'm thinking...";
+        }
+    </script>
+</body>
+</html>
