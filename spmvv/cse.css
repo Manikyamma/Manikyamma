@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+
+}
+#whole{
+    
+    height: 100vh;
+}
+.two{
+    text-align: center;
+}
+.one{
+ 
+ height: 15%;
+ width: 100%;
+text-align: center;
+ background-image: url("bar.jpg");
+ color: aliceblue;
+}
+.two{
+    
+    height: 30%;
+    margin-bottom: 10px;
+
+   }
+.three{
+    
+    height: 45%;
+   }
+.four{
+    
+    height: 10%;
+    width: 100%;
+}
+.threeone{
+      
+    display:inline-block;
+    
+        width: 33%;
+        height: 100%;
+}
+.img{
+    width:100%;
+    height: 100%;
+    padding-left: 0px;
+}
+#button{
+    height:100%;
+    width: 300px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 10px;
+    margin-left: 30px;
+    border-radius: 8px;
+    background-color: rgb(132, 164, 223);
+    font-size: large;
+    border-color:rgb(132, 164, 223) ;
+} 
+#button:hover{
+    background-color: darkblue;
+    color: white;
+
+    text-align: center;
+}
